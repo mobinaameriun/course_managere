@@ -32,6 +32,7 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public Student load(Long id) {
+
         return studentRepository.findById(id).orElseThrow();
     }
 

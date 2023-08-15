@@ -7,6 +7,6 @@ public interface ProfessorDao {
     Professor save(Professor professor);
     void delete(Long id);
     void update(Professor professor);
-    Department load(Long id);
+    Professor load(Long id);
     Iterable<Professor> loadAll();
 }
