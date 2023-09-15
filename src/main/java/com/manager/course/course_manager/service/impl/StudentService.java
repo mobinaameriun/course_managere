@@ -1,15 +1,15 @@
-package com.manager.course.course_manager.dao.impl;
+package com.manager.course.course_manager.service.impl;
 
-import com.manager.course.course_manager.dao.StudentDao;
+import com.manager.course.course_manager.service.StudentDao;
 import com.manager.course.course_manager.entity.Student;
 import com.manager.course.course_manager.repository.StudentRepository;
+import org.springframework.stereotype.Service;
 
-import java.util.List;
-
-public class StudentDaoImpl implements StudentDao {
+@Service
+public class StudentService implements StudentDao {
    private final StudentRepository studentRepository;
 
-    public StudentDaoImpl(StudentRepository studentRepository) {
+    public StudentService(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
     }
 

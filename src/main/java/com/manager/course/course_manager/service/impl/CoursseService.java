@@ -1,16 +1,19 @@
-package com.manager.course.course_manager.dao.impl;
+package com.manager.course.course_manager.service.impl;
 
-import com.manager.course.course_manager.dao.CourseDao;
+import com.manager.course.course_manager.service.CourseDao;
 import com.manager.course.course_manager.entity.Course;
-import com.manager.course.course_manager.entity.Student;
 import com.manager.course.course_manager.repository.CourseRepository;
+import org.springframework.stereotype.Service;
 
-public class CourseDaoImpl implements CourseDao {
+@Service
+public class CoursseService implements CourseDao {
     private final CourseRepository courseRepository;
 
-    public CourseDaoImpl(CourseRepository courseRepository) {
+
+    public CoursseService(CourseRepository courseRepository) {
         this.courseRepository = courseRepository;
     }
+
     @Override
     public Course save(Course course) {
         return courseRepository.save(course);
@@ -18,7 +21,7 @@ public class CourseDaoImpl implements CourseDao {
 
     @Override
     public void delete(Long id) {
-        Course course=courseRepository.findById(id).orElseThrow();
+        Course course = courseRepository.findById(id).orElseThrow();
         courseRepository.delete(course);
     }
 

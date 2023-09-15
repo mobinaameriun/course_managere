@@ -1,14 +1,16 @@
-package com.manager.course.course_manager.dao.impl;
+package com.manager.course.course_manager.service.impl;
 
-import com.manager.course.course_manager.dao.DepartmentDao;
+import com.manager.course.course_manager.service.DepartmentDao;
 import com.manager.course.course_manager.entity.Department;
 import com.manager.course.course_manager.repository.DepartmentRepository;
+import org.springframework.stereotype.Service;
 
-public class DepartmentDaoImpl implements DepartmentDao {
+@Service
+public class DepartmentService implements DepartmentDao {
 
     private final DepartmentRepository departmentRepository;
 
-    public DepartmentDaoImpl(DepartmentRepository departmentRepository) {
+    public DepartmentService(DepartmentRepository departmentRepository) {
         this.departmentRepository = departmentRepository;
     }
 

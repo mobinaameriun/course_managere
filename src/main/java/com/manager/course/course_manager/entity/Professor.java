@@ -17,4 +17,6 @@ public class Professor extends Base<Long>{
     private int nationalCode;
     @OneToMany
     private List<Course> courses;
+    @ManyToOne
+    private Department department;
 }

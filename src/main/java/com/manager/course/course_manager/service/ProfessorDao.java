@@ -1,6 +1,4 @@
-package com.manager.course.course_manager.dao;
-import com.manager.course.course_manager.base.repository.BaseRepo;
-import com.manager.course.course_manager.entity.Department;
+package com.manager.course.course_manager.service;
 import com.manager.course.course_manager.entity.Professor;
 
 public interface ProfessorDao {

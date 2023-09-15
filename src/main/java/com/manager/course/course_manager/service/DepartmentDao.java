@@ -1,4 +1,4 @@
-package com.manager.course.course_manager.dao;
+package com.manager.course.course_manager.service;
 import com.manager.course.course_manager.entity.Department;
 
 public interface DepartmentDao {
